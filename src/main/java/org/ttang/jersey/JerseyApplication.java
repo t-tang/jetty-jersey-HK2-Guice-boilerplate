@@ -12,7 +12,7 @@ import com.google.inject.Guice;
 
 public class JerseyApplication extends ResourceConfig {
 	@Inject
-    public JerseyApplication(ServiceLocator serviceLocator, ServletContext servletContext) {
+    public JerseyApplication(ServiceLocator serviceLocator) {
         
 		packages(JerseyApplication.class.getPackage().getName());
 		
